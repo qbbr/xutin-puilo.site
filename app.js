@@ -35,6 +35,13 @@
     };
     var trueHoleText = document.getElementsByTagName('strong')[0];
     textEffect(trueHoleText, 'fly-in-out');
+    trueHoleText.onclick = function() {
+        var img = document.createElement('img');
+        img.src = '/ziga_by_puilo.png';
+        img.className = 'ziga-by-puilo';
+        document.body.appendChild(img);
+        trueHoleText.onclick = null;
+    };
 
     // dva
     function printConsoleText(text) {

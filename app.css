@@ -42,18 +42,26 @@ body { overflow: hidden; }
   text-align: center;
 }
 
-    h1 { margin-top: 0; }
+    h1 { margin-top: 0; cursor: pointer; }
     h6 { margin-bottom: 0; }
     p { margin-bottom: 0; }
 
 
-img {
+img.face-of-puilo {
     position: absolute;
     right: 1%;
     bottom: 1%;
     animation: shake 0.5s;
     animation-iteration-count: infinite;
     cursor: crosshair;
+}
+
+img.ziga-by-puilo {
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+    -webkit-animation: super-rainbow 5s infinite alternate linear;
+    -moz-animation: super-rainbow 5s infinite alternate linear;
 }
 
 /* w animations */
@@ -178,4 +186,23 @@ i.fly-in-out {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* rainbow animation for pidr */
+@-webkit-keyframes super-rainbow {
+    0%   { background: red; }
+    20%  { background: orange; }
+    40%  { background: yellow; }
+    60%  { background: green; }
+    80%  { background: blue; }
+    100% { background: violet; }
+}
+
+@-moz-keyframes super-rainbow {
+    0%   { background: red; }
+    20%  { background: orange; }
+    40%  { background: yellow; }
+    60%  { background: green; }
+    80%  { background: blue; }
+    100% { background: violet; }
 }
